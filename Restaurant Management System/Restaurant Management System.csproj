@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50AA6122-6D67-4D7D-BE20-74974ACA0959}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant_Management_System</RootNamespace>
+    <AssemblyName>Restaurant Management System</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>C20238C857604AA88B08EF5420E53BF2D620599E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Restaurant Management System_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>C:\Users\LeGenD\Desktop\crud setup file\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Restaurant Management</ProductName>
+    <PublisherName>Legend</PublisherName>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\LeGenD\Downloads\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 2.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Homefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homefrm.Designer.cs">
+      <DependentUpon>Homefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginfrm.Designer.cs">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Mainfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.Designer.cs">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BillListfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\BillListfrm.Designer.cs">
+      <DependentUpon>BillListfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CategoryAddfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\CategoryAddfrm.Designer.cs">
+      <DependentUpon>CategoryAddfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CheckOutfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\CheckOutfrm.Designer.cs">
+      <DependentUpon>CheckOutfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\POSfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\POSfrm.Designer.cs">
+      <DependentUpon>POSfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductAddfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ProductAddfrm.Designer.cs">
+      <DependentUpon>ProductAddfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StaffAddfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StaffAddfrm.Designer.cs">
+      <DependentUpon>StaffAddfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TableAddfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\TableAddfrm.Designer.cs">
+      <DependentUpon>TableAddfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TableSelectfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\TableSelectfrm.Designer.cs">
+      <DependentUpon>TableSelectfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WaiterSelectfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\WaiterSelectfrm.Designer.cs">
+      <DependentUpon>WaiterSelectfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Homefrm.resx">
+      <DependentUpon>Homefrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginfrm.resx">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.resx">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\BillListfrm.resx">
+      <DependentUpon>BillListfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\CategoryAddfrm.resx">
+      <DependentUpon>CategoryAddfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\CheckOutfrm.resx">
+      <DependentUpon>CheckOutfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\POSfrm.resx">
+      <DependentUpon>POSfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ProductAddfrm.resx">
+      <DependentUpon>ProductAddfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\StaffAddfrm.resx">
+      <DependentUpon>StaffAddfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\TableAddfrm.resx">
+      <DependentUpon>TableAddfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\TableSelectfrm.resx">
+      <DependentUpon>TableSelectfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\WaiterSelectfrm.resx">
+      <DependentUpon>WaiterSelectfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrationfrm.resx">
+      <DependentUpon>Registrationfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleAdd.resx">
+      <DependentUpon>SampleAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleView.resx">
+      <DependentUpon>SampleView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CategoryViewfrm.resx">
+      <DependentUpon>CategoryViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KitchenViewfrm.resx">
+      <DependentUpon>KitchenViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductsViewfrm.resx">
+      <DependentUpon>ProductsViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffViewfrm.resx">
+      <DependentUpon>StaffViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TableViewfrm.resx">
+      <DependentUpon>TableViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registrationfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrationfrm.Designer.cs">
+      <DependentUpon>Registrationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RMDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SampleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleAdd.Designer.cs">
+      <DependentUpon>SampleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleView.Designer.cs">
+      <DependentUpon>SampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CategoryViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CategoryViewfrm.Designer.cs">
+      <DependentUpon>CategoryViewfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KitchenViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\KitchenViewfrm.Designer.cs">
+      <DependentUpon>KitchenViewfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductsViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductsViewfrm.Designer.cs">
+      <DependentUpon>ProductsViewfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaffViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StaffViewfrm.Designer.cs">
+      <DependentUpon>StaffViewfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TableViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TableViewfrm.Designer.cs">
+      <DependentUpon>TableViewfrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\add user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\customer.png" />
+    <None Include="Resources\bill %281%29.png" />
+    <None Include="Resources\waiter.png" />
+    <None Include="Resources\switch.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\new1.png" />
+    <None Include="Resources\hold.png" />
+    <None Include="Resources\hold1.png" />
+    <None Include="Resources\bill.png" />
+    <None Include="Resources\bill1.png" />
+    <None Include="Resources\kot.png" />
+    <None Include="Resources\kot1.png" />
+    <None Include="Resources\delivery.png" />
+    <None Include="Resources\delivery 1.png" />
+    <None Include="Resources\take away.png" />
+    <None Include="Resources\take away 1.png" />
+    <None Include="Resources\din in.png" />
+    <None Include="Resources\din in 1.png" />
+    <None Include="Resources\brand-identity.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\user %282%29.png" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\table %281%29.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\settings %281%29.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\chef %281%29.png" />
+    <None Include="Resources\chef.png" />
+    <None Include="Resources\team %281%29.png" />
+    <None Include="Resources\team.png" />
+    <None Include="Resources\pos-terminal %281%291.png" />
+    <None Include="Resources\pos-terminal %281%29.png" />
+    <None Include="Resources\pos-terminal.png" />
+    <None Include="Resources\box %281%29.png" />
+    <None Include="Resources\002-categories-1.png" />
+    <None Include="Resources\box1.png" />
+    <None Include="Resources\001-categories.png" />
+    <None Include="Resources\box.png" />
+    <None Include="Resources\category.png" />
+    <None Include="Resources\restaurant %282%29.png" />
+    <None Include="Resources\home1.png" />
+    <None Include="Resources\home %281%29.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\restaurant %281%29.png" />
+    <None Include="RMDBDataSet.xsc">
+      <DependentUpon>RMDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RMDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RMDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="RMDBDataSet.xss">
+      <DependentUpon>RMDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RMDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RMDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RMDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
