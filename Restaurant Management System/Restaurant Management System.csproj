@@ -57,6 +57,7 @@
     <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\LeGenD\Downloads\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 2.0\Guna.UI2.dll</HintPath>
@@ -68,6 +69,11 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -81,12 +87,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Homefrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Homefrm.Designer.cs">
-      <DependentUpon>Homefrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Loginfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,12 +166,14 @@
     <Compile Include="Model\WaiterSelectfrm.Designer.cs">
       <DependentUpon>WaiterSelectfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Printfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printfrm.Designer.cs">
+      <DependentUpon>Printfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Homefrm.resx">
-      <DependentUpon>Homefrm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Loginfrm.resx">
       <DependentUpon>Loginfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -224,6 +226,10 @@
       <DependentUpon>WaiterSelectfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Printfrm.resx">
+      <DependentUpon>Printfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -232,6 +238,26 @@
     <EmbeddedResource Include="Registrationfrm.resx">
       <DependentUpon>Registrationfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BillRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MenuListRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MenuListRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SaleByCatefrm.resx">
+      <DependentUpon>SaleByCatefrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\saleByCatRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>saleByCatRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StaffListRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StaffListRpt.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleAdd.resx">
       <DependentUpon>SampleAdd.cs</DependentUpon>
@@ -251,6 +277,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ProductsViewfrm.resx">
       <DependentUpon>ProductsViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RepotsViewfrm.resx">
+      <DependentUpon>RepotsViewfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StaffViewfrm.resx">
@@ -280,6 +310,36 @@
     </Compile>
     <Compile Include="Registrationfrm.Designer.cs">
       <DependentUpon>Registrationfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BillRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MenuListRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuListRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SaleByCatefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SaleByCatefrm.Designer.cs">
+      <DependentUpon>SaleByCatefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\saleByCatRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>saleByCatRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StaffListRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffListRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RMDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -315,6 +375,12 @@
     </Compile>
     <Compile Include="View\ProductsViewfrm.Designer.cs">
       <DependentUpon>ProductsViewfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RepotsViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RepotsViewfrm.Designer.cs">
+      <DependentUpon>RepotsViewfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\StaffViewfrm.cs">
       <SubType>Form</SubType>
@@ -394,8 +460,7 @@
     <None Include="RMDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>RMDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>
-      </SubType>
+      <SubType>Designer</SubType>
     </None>
     <None Include="RMDBDataSet.xss">
       <DependentUpon>RMDBDataSet.xsd</DependentUpon>
@@ -432,6 +497,9 @@
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\statistics.png" />
+    <None Include="Resources\statistics %281%29.png" />
+    <None Include="Resources\pie-chart.png" />
     <Content Include="RMDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -439,9 +507,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>RMDB.mdf</DependentUpon>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reports\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

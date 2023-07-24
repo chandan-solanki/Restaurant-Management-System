@@ -67,6 +67,7 @@ namespace Restaurant_Management_System.Model
                     b.Size = new Size(180, 45);
                     b.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
                     b.Text = row["catName"].ToString();
+                    b.Font = new Font("Segoe UI,", 15);
 
                     //event for click 
                     b.Click += new EventHandler(b_Click);
@@ -163,7 +164,7 @@ namespace Restaurant_Management_System.Model
                 byte[] imagebytearr = imageBytearr;
 
                 AddItem("0",item["pId"].ToString(), item["pName"].ToString(), item["catName"].ToString(),
-                    item["pPrice"].ToString(),Image.FromStream(new MemoryStream(imagebytearr)));
+                item["pPrice"].ToString(),Image.FromStream(new MemoryStream(imagebytearr)));
             }
 
             con.Close();
@@ -309,6 +310,13 @@ namespace Restaurant_Management_System.Model
 
             int detailID = 0;
 
+            if (orderType == "")
+            {
+                MessageBox.Show("Please select order type !", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
             if (MainId == 0)//insert 
             {
                 qry1 = @"insert into tblMain values(@aDate,@aTime,
@@ -329,7 +337,7 @@ namespace Restaurant_Management_System.Model
             SqlCommand cmd = new SqlCommand(qry1,con);
 
             cmd.Parameters.AddWithValue("@ID",MainId);
-            cmd.Parameters.AddWithValue("@aDate",Convert.ToDateTime(DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@aDate", DateTime.Now.ToString("d"));
             cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
             cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
@@ -344,7 +352,7 @@ namespace Restaurant_Management_System.Model
 
 
             if (con.State == ConnectionState.Closed) { con.Open(); }
-            if(MainId == 0) { MainId = Convert.ToInt32(cmd.ExecuteScalar());} else { cmd.ExecuteNonQuery();}
+            if (MainId == 0) { MainId = Convert.ToInt32(cmd.ExecuteScalar());} else { cmd.ExecuteNonQuery();}
             if (con.State == ConnectionState.Open) { con.Close(); }
 
 
@@ -426,6 +434,7 @@ namespace Restaurant_Management_System.Model
                 btnDelivery.Checked = true;
                 lblWaiter.Visible = false;
                 lblTable.Visible = false;
+                lblDriverName.Visible = true;
             }
 
             else if(dt.Rows[0]["orderType"].ToString() == "Take Away")
@@ -433,6 +442,7 @@ namespace Restaurant_Management_System.Model
                 btnTake.Checked = true;
                 lblWaiter.Visible = false;
                 lblTable.Visible = false;
+                lblDriverName.Visible = true;
             }
 
             else
@@ -449,6 +459,7 @@ namespace Restaurant_Management_System.Model
             {
                 lblTable.Text = item["TableName"].ToString();
                 lblWaiter.Text = item["WaiterName"].ToString();
+                lblDriverName.Text = "Customer Name : " + item["custName"].ToString() + " Phone : " + item["custPhone"].ToString();
                 string detailId = item["DetailID"].ToString();
                 string proName = item["pName"].ToString();
                 string proId = item["pId"].ToString();
@@ -467,7 +478,7 @@ namespace Restaurant_Management_System.Model
             CheckOutfrm frm = new CheckOutfrm();
             frm.MainID = billid;
             frm.amount = Convert.ToDouble(lblTotal.Text);
-           MainClass.BlurBackground(frm);
+            MainClass.BlurBackground(frm);
 
             MainId = 0;
             billid = 0;
@@ -518,7 +529,7 @@ namespace Restaurant_Management_System.Model
             SqlCommand cmd = new SqlCommand(qry1, con);
 
             cmd.Parameters.AddWithValue("@ID", MainId);
-            cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@aDate", DateTime.Now.ToString("d"));
             cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
             cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);

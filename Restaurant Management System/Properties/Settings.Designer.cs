@@ -44,5 +44,38 @@ namespace Restaurant_Management_System.Properties {
                 return ((string)(this["RMDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLExpress;AttachDbFilename=|DataDirectory|\\Database\\sqlrmdb.mdf;In" +
+            "tegrated Security=True;User Instance=True")]
+        public string sqlrmdbConnectionString {
+            get {
+                return ((string)(this["sqlrmdbConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLExpress;AttachDbFilename=|DataDirectory|\\bin\\Debug\\RMDB.mdf;Inte" +
+            "grated Security=True;User Instance=True")]
+        public string RMDBConnectionString1 {
+            get {
+                return ((string)(this["RMDBConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLExpress;AttachDbFilename=|DataDirectory|\\bin\\Debug\\Database\\sqlr" +
+            "mdb.mdf;Integrated Security=True;User Instance=True")]
+        public string sqlrmdbConnectionString1 {
+            get {
+                return ((string)(this["sqlrmdbConnectionString1"]));
+            }
+        }
     }
 }

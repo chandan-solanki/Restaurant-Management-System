@@ -55,6 +55,7 @@
             this.btnClose.CustomImages.Parent = this.btnClose;
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.TabIndex = 1;
             // 
             // guna2Panel1
             // 
@@ -93,7 +94,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 2;
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // label2
             // 
@@ -166,7 +167,7 @@
             this.txtReceived.SelectedText = "";
             this.txtReceived.ShadowDecoration.Parent = this.txtReceived;
             this.txtReceived.Size = new System.Drawing.Size(254, 36);
-            this.txtReceived.TabIndex = 6;
+            this.txtReceived.TabIndex = 0;
             this.txtReceived.TextChanged += new System.EventHandler(this.txtReceived_TextChanged);
             // 
             // label4

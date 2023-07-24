@@ -263,6 +263,13 @@ namespace Restaurant_Management_System.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap pie_chart {
+            get {
+                object obj = ResourceManager.GetObject("pie-chart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap pos_terminal {
             get {
                 object obj = ResourceManager.GetObject("pos-terminal", resourceCulture);
@@ -329,6 +336,20 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap settings__1_ {
             get {
                 object obj = ResourceManager.GetObject("settings (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap statistics {
+            get {
+                object obj = ResourceManager.GetObject("statistics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap statistics__1_ {
+            get {
+                object obj = ResourceManager.GetObject("statistics (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

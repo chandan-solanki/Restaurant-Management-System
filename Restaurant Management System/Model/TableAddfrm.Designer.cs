@@ -50,6 +50,7 @@
             this.btnClose.CustomImages.Parent = this.btnClose;
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.TabIndex = 1;
             // 
             // guna2Panel1
             // 
@@ -108,7 +109,7 @@
             this.txtName.SelectedText = "";
             this.txtName.ShadowDecoration.Parent = this.txtName;
             this.txtName.Size = new System.Drawing.Size(254, 36);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 0;
             // 
             // TableAddfrm
             // 

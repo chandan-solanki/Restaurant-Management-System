@@ -1,36 +1,38 @@
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.exe
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.pdb
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\ResolveAssemblyReference.cache
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Loginfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.GenerateResource.Cache
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.exe
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.pdb
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Registrationfrm.resources
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Mainfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.exe.config
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.exe.manifest
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.application
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.exe.manifest
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.application
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Homefrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.AddCustomer.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.BillListfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.CategoryAddfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.CheckOutfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.POSfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ProductAddfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.StaffAddfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.TableAddfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.TableSelectfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.WaiterSelectfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Printfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Registrationfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Reports.SaleByCatefrm.resources
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.SampleView.resources
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.CategoryViewfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.CategoryAddfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.TableAddfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.TableViewfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.StaffViewfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.StaffAddfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.ProductsViewfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ProductAddfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.POSfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.TableSelectfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.WaiterSelectfrm.resources
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.KitchenViewfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.BillListfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.CheckOutfrm.resources
-D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.AddCustomer.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.ProductsViewfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.RepotsViewfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.StaffViewfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.TableViewfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.GenerateResource.Cache
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\RMDB.mdf
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\RMDB_log.ldf
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.exe.config
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.exe.manifest
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.application
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.exe
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\bin\Debug\Restaurant Management System.pdb
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.exe.manifest
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.application
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.exe
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.pdb

@@ -64,42 +64,42 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Restaurant Management System.exe" size="905216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Restaurant Management System.exe" size="1221632">
       <assemblyIdentity name="Restaurant Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iMrumd2WQ8M/BPT9/zBOLwImusE=</dsig:DigestValue>
+        <dsig:DigestValue>OUUY8kg/2Fqn2p7dIoXqpAUMtSA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Restaurant Management System.exe.config" size="702">
+  <file name="Restaurant Management System.exe.config" size="414">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>IJUd7rsQspcs7B85/MiNYhimAwg=</dsig:DigestValue>
+      <dsig:DigestValue>ZwrHszYhIgosEWV1Uq3WpZ05hsA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RMDB.mdf" size="3342336" writeableType="applicationData">
+  <file name="RMDB.mdf" size="16973824" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ZBK2PlsKzddksJ7lyGf1SnKOuLw=</dsig:DigestValue>
+      <dsig:DigestValue>C79fWAGtjz3fsUMq48HKNby+dno=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RMDB_log.ldf" size="1048576" writeableType="applicationData">
+  <file name="RMDB_log.ldf" size="16973824" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>vQQ43xMnujGt1VutBE1Zq/lWnT8=</dsig:DigestValue>
+      <dsig:DigestValue>/zi7NLLKXv+baBnabbuJdMLPBvI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

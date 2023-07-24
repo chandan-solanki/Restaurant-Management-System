@@ -57,6 +57,7 @@
             this.btnClose.CustomImages.Parent = this.btnClose;
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.TabIndex = 1;
             // 
             // guna2Panel1
             // 
@@ -102,7 +103,7 @@
             this.cbCat.Name = "cbCat";
             this.cbCat.ShadowDecoration.Parent = this.cbCat;
             this.cbCat.Size = new System.Drawing.Size(254, 36);
-            this.cbCat.TabIndex = 8;
+            this.cbCat.TabIndex = 1;
             this.cbCat.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.cbCat.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
             // 
@@ -113,7 +114,7 @@
             this.label4.Location = new System.Drawing.Point(46, 257);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 21);
-            this.label4.TabIndex = 11;
+            this.label4.TabIndex = 5;
             this.label4.Text = "Category ";
             // 
             // label3
@@ -123,7 +124,7 @@
             this.label3.Location = new System.Drawing.Point(347, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 21);
-            this.label3.TabIndex = 10;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Price";
             // 
             // txtPrice
@@ -150,7 +151,7 @@
             this.txtPrice.SelectedText = "";
             this.txtPrice.ShadowDecoration.Parent = this.txtPrice;
             this.txtPrice.Size = new System.Drawing.Size(254, 36);
-            this.txtPrice.TabIndex = 7;
+            this.txtPrice.TabIndex = 2;
             // 
             // label2
             // 
@@ -159,7 +160,7 @@
             this.label2.Location = new System.Drawing.Point(46, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 21);
-            this.label2.TabIndex = 9;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Name";
             // 
             // txtName
@@ -186,7 +187,7 @@
             this.txtName.SelectedText = "";
             this.txtName.ShadowDecoration.Parent = this.txtName;
             this.txtName.Size = new System.Drawing.Size(254, 36);
-            this.txtName.TabIndex = 6;
+            this.txtName.TabIndex = 0;
             // 
             // txtImage
             // 
@@ -217,7 +218,7 @@
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.ShadowDecoration.Parent = this.btnBrowse;
             this.btnBrowse.Size = new System.Drawing.Size(147, 45);
-            this.btnBrowse.TabIndex = 13;
+            this.btnBrowse.TabIndex = 3;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnBrowse.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;

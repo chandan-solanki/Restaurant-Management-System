@@ -4,14 +4,14 @@
   <description asmv2:publisher="Legend" asmv2:product="Restaurant Management" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Restaurant Management System.exe.manifest" size="5539">
+    <dependentAssembly dependencyType="install" codebase="Restaurant Management System.exe.manifest" size="5542">
       <assemblyIdentity name="Restaurant Management System.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jqnaOkujJyhGL6rZQsWBdOIQaSY=</dsig:DigestValue>
+        <dsig:DigestValue>k6q7SbjwgIXkV7PBvNZEo9Yyuqs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

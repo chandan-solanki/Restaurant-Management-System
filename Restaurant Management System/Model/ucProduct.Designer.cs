@@ -73,7 +73,7 @@
             // 
             // lblProductName
             // 
-            this.lblProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductName.Location = new System.Drawing.Point(19, 6);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(141, 23);
@@ -84,10 +84,10 @@
             // txtImage
             // 
             this.txtImage.Image = ((System.Drawing.Image)(resources.GetObject("txtImage.Image")));
-            this.txtImage.Location = new System.Drawing.Point(35, 21);
+            this.txtImage.Location = new System.Drawing.Point(16, 16);
             this.txtImage.Name = "txtImage";
             this.txtImage.ShadowDecoration.Parent = this.txtImage;
-            this.txtImage.Size = new System.Drawing.Size(108, 97);
+            this.txtImage.Size = new System.Drawing.Size(147, 113);
             this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.txtImage.TabIndex = 0;
             this.txtImage.TabStop = false;

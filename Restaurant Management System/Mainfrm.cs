@@ -59,7 +59,7 @@ namespace Restaurant_Management_System
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            AddControl(new Homefrm());
+            //AddControl(new Homefrm());
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
@@ -93,6 +93,11 @@ namespace Restaurant_Management_System
         private void btnKitchen_Click(object sender, EventArgs e)
         {
             AddControl(new KitchenViewfrm());
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            AddControl(new RepotsViewfrm());
         }
 
     }
