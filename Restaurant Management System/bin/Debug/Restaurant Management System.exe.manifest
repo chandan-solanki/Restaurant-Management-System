@@ -64,14 +64,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Restaurant Management System.exe" size="1221632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Restaurant Management System.exe" size="1323008">
       <assemblyIdentity name="Restaurant Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OUUY8kg/2Fqn2p7dIoXqpAUMtSA=</dsig:DigestValue>
+        <dsig:DigestValue>Cax06RHGWRSdBTmMyZ8lmo0A1p8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -84,13 +84,13 @@
       <dsig:DigestValue>ZwrHszYhIgosEWV1Uq3WpZ05hsA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RMDB.mdf" size="16973824" writeableType="applicationData">
+  <file name="RMDB.mdf" size="20119552" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>C79fWAGtjz3fsUMq48HKNby+dno=</dsig:DigestValue>
+      <dsig:DigestValue>TxOD9SW7TWJPVNEmJZvIJDOy4bU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="RMDB_log.ldf" size="16973824" writeableType="applicationData">
@@ -99,7 +99,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>/zi7NLLKXv+baBnabbuJdMLPBvI=</dsig:DigestValue>
+      <dsig:DigestValue>flgsjQnM3kAp41BeTkwQHhKf3f0=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

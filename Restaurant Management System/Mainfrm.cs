@@ -19,7 +19,7 @@ namespace Restaurant_Management_System
             InitializeComponent();
         }
 
-
+        public int id = -1;
         //for blur background 
         static Mainfrm _obj;
 
@@ -98,6 +98,13 @@ namespace Restaurant_Management_System
         private void btnReports_Click(object sender, EventArgs e)
         {
             AddControl(new RepotsViewfrm());
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            SettingViewfrm frm = new SettingViewfrm();
+            frm.id = id;
+            AddControl(frm);
         }
 
     }

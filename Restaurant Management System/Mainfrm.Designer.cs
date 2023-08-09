@@ -284,6 +284,7 @@
             this.btnSettings.TextOffset = new System.Drawing.Point(25, 0);
             this.btnSettings.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnSettings.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnKitchen
             // 

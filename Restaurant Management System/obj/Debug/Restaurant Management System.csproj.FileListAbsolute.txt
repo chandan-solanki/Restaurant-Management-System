@@ -36,3 +36,7 @@ D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaura
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.application
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.exe
 D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant Management System.pdb
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Forgetfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.ConfirmFrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.SettingViewfrm.resources
+D:\CODING WORLD\C# Project\College Project\Restaurant Management System\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ChangePasswordfrm.resources

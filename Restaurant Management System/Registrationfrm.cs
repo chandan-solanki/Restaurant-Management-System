@@ -38,14 +38,18 @@ namespace Restaurant_Management_System
 
                 con.Open();
                 //SqlCommand cmd = new SqlCommand("insert into user_info values('" + txtUser.Text + "','" + txtPass.Text + "','" + txtPhone.Text + "')", con);
-                SqlCommand cmd = new SqlCommand("insert into user_info values(@uname,@upassword,@uphone)", con);
+                SqlCommand cmd = new SqlCommand("insert into user_info values(@uname,@upassword,@usecurity,@uanswer,@uphone)", con);
                 cmd.Parameters.AddWithValue("@uname", txtUser.Text);
                 cmd.Parameters.AddWithValue("@upassword", txtPass.Text);
+                cmd.Parameters.AddWithValue("@usecurity", cmSecurity.Text);
+                cmd.Parameters.AddWithValue("@uanswer", ansTxt.Text);
                 cmd.Parameters.AddWithValue("@uphone", txtPhone.Text);
                 try
                 {
                     cmd.ExecuteNonQuery();
+                    clearField();
                     MessageBox.Show("Create Account Successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
 
                 catch (Exception ex)
@@ -59,9 +63,28 @@ namespace Restaurant_Management_System
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            clearField();
+            
+        }
+
+        private void clearField()
+        {
             txtPass.Clear();
             txtUser.Clear();
             txtPhone.Clear();
+            cmSecurity.SelectedIndex = 0;
+            ansTxt.Clear();
+ 
+        }
+
+        private void Registrationfrm_Load(object sender, EventArgs e)
+        {
+            cmSecurity.SelectedIndex = 0;
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

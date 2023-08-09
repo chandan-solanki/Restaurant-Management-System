@@ -87,6 +87,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmFrm.Designer.cs">
+      <DependentUpon>ConfirmFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgetfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgetfrm.Designer.cs">
+      <DependentUpon>Forgetfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loginfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </Compile>
     <Compile Include="Model\CategoryAddfrm.Designer.cs">
       <DependentUpon>CategoryAddfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChangePasswordfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ChangePasswordfrm.Designer.cs">
+      <DependentUpon>ChangePasswordfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\CheckOutfrm.cs">
       <SubType>Form</SubType>
@@ -174,6 +192,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfirmFrm.resx">
+      <DependentUpon>ConfirmFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgetfrm.resx">
+      <DependentUpon>Forgetfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loginfrm.resx">
       <DependentUpon>Loginfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -192,6 +218,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\CategoryAddfrm.resx">
       <DependentUpon>CategoryAddfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ChangePasswordfrm.resx">
+      <DependentUpon>ChangePasswordfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\CheckOutfrm.resx">
@@ -281,6 +311,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\RepotsViewfrm.resx">
       <DependentUpon>RepotsViewfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SettingViewfrm.resx">
+      <DependentUpon>SettingViewfrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StaffViewfrm.resx">
@@ -381,6 +415,12 @@
     </Compile>
     <Compile Include="View\RepotsViewfrm.Designer.cs">
       <DependentUpon>RepotsViewfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingViewfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SettingViewfrm.Designer.cs">
+      <DependentUpon>SettingViewfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\StaffViewfrm.cs">
       <SubType>Form</SubType>
@@ -500,6 +540,12 @@
     <None Include="Resources\statistics.png" />
     <None Include="Resources\statistics %281%29.png" />
     <None Include="Resources\pie-chart.png" />
+    <None Include="Resources\forgot-password.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\shield %281%29.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\password.png" />
     <Content Include="RMDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

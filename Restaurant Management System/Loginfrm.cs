@@ -43,19 +43,24 @@ namespace Restaurant_Management_System
                 SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["db"].ConnectionString);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("select *from user_info where uName = '" + txtUser.Text + "' and uPassword = '" + txtPass.Text + "'", con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
+                //SqlDataReader dr = cmd.ExecuteReader();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                int id = -1;
+                if (dt.Rows.Count > 0)
                 {
+                    id = Convert.ToInt32(dt.Rows[0][0]);
                     Mainfrm mf = new Mainfrm();
                     this.Hide();
                     uname = txtUser.Text;
+                    mf.id = id;
                     mf.Show();
                 }
                 else
                 {
                     MessageBox.Show("Please Enter Valid User Name and Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                dr.Close();
                 con.Close();
             }
         }
@@ -70,6 +75,18 @@ namespace Restaurant_Management_System
             {
                 txtPass.UseSystemPasswordChar = true;
             }
+        }
+
+        private void Loginfrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ConfirmFrm frm = new ConfirmFrm();
+            frm.Show();
+            this.Close();
         }
 
 
