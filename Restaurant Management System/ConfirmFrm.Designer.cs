@@ -37,13 +37,13 @@
             this.txtUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ansTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmSecurity = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.label3.Size = new System.Drawing.Size(337, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Confirm Your Username And Security Question";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2Separator1
             // 
@@ -66,6 +67,7 @@
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(598, 10);
             this.guna2Separator1.TabIndex = 38;
+            this.guna2Separator1.Click += new System.EventHandler(this.guna2Separator1_Click);
             // 
             // btnNext
             // 
@@ -107,6 +109,7 @@
             this.label2.Size = new System.Drawing.Size(105, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Enter Username";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUser
             // 
@@ -136,6 +139,7 @@
             this.txtUser.ShadowDecoration.Parent = this.txtUser;
             this.txtUser.Size = new System.Drawing.Size(262, 40);
             this.txtUser.TabIndex = 0;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // guna2Elipse1
             // 
@@ -152,6 +156,19 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(599, 219);
             this.guna2Panel1.TabIndex = 6;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.shield__1_;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(232, 7);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(134, 151);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // label6
             // 
@@ -162,6 +179,7 @@
             this.label6.Size = new System.Drawing.Size(125, 17);
             this.label6.TabIndex = 8;
             this.label6.Text = "Enter your Answer ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // ansTxt
             // 
@@ -202,6 +220,7 @@
             this.label5.Size = new System.Drawing.Size(123, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Security Questions";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // cmSecurity
             // 
@@ -231,6 +250,7 @@
             this.cmSecurity.TabIndex = 1;
             this.cmSecurity.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.cmSecurity.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
+            this.cmSecurity.SelectedIndexChanged += new System.EventHandler(this.cmSecurity_SelectedIndexChanged);
             // 
             // btnClear
             // 
@@ -284,17 +304,6 @@
             this.btnLogin.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btnLogin.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.shield__1_;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(232, 7);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(134, 151);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // ConfirmFrm
             // 

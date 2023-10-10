@@ -46,7 +46,7 @@ namespace Restaurant_Management_System.Model
 
         private void btnBrowse_Click_1(object sender, EventArgs e)
         {
-         OpenFileDialog ofd = new OpenFileDialog();
+            OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Images(.jpg, .png)|*.png; *jpg";
 
             if(ofd.ShowDialog() == DialogResult.OK)
@@ -59,48 +59,56 @@ namespace Restaurant_Management_System.Model
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-            string qry = "";
-            //insert the data
-            if (id == 0)
+            if (txtPrice.Text == "" || txtName.Text == "" || cbCat.Text == "")
             {
-                qry = "insert into products_info values(@Name,@Price,@Cat,@Image)";
-
+                MessageBox.Show("Please enter all fields !!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            //update the data
+
             else
             {
-                qry = "update products_info set pName = @Name , pPrice = @Price, CategoryID = @Cat,pImage = @Image where pId = '"+id+"'";
-            }
-
-            //for image store
-            Image temp = new Bitmap(txtImage.Image);
-            MemoryStream ms = new MemoryStream();
-            temp.Save(ms,System.Drawing.Imaging.ImageFormat.Png);
-            imageBytearr = ms.ToArray();
-            Hashtable ht = new Hashtable();
-            ht.Add("@id", id);
-            ht.Add("@Name", txtName.Text);
-            ht.Add("@Price", txtPrice.Text);
-            ht.Add("@Cat", Convert.ToInt32(cbCat.SelectedValue));
-            ht.Add("@Image", imageBytearr);
-
-            if (MainClass.SQL(qry, ht) > 0)
-            {
+                string qry = "";
+                //insert the data
                 if (id == 0)
                 {
-                    MessageBox.Show("Insert Successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    qry = "insert into products_info values(@Name,@Price,@Cat,@Image)";
+
                 }
-                else 
+                //update the data
+                else
                 {
-                    MessageBox.Show("Update Successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                    qry = "update products_info set pName = @Name , pPrice = @Price, CategoryID = @Cat,pImage = @Image where pId = '" + id + "'";
                 }
-                id = 0;
-                cID = 0;
-                txtName.Text = "";
-                txtName.Focus();
-                txtPrice.Clear();
-                cbCat.SelectedIndex = -1;
-                txtImage.Image = Restaurant_Management_System.Properties.Resources.brand_identity;
+
+                //for image store
+                Image temp = new Bitmap(txtImage.Image);
+                MemoryStream ms = new MemoryStream();
+                temp.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                imageBytearr = ms.ToArray();
+                Hashtable ht = new Hashtable();
+                ht.Add("@id", id);
+                ht.Add("@Name", txtName.Text);
+                ht.Add("@Price", txtPrice.Text);
+                ht.Add("@Cat", Convert.ToInt32(cbCat.SelectedValue));
+                ht.Add("@Image", imageBytearr);
+
+                if (MainClass.SQL(qry, ht) > 0)
+                {
+                    if (id == 0)
+                    {
+                        MessageBox.Show("Insert Successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update Successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    id = 0;
+                    cID = 0;
+                    txtName.Text = "";
+                    txtName.Focus();
+                    txtPrice.Clear();
+                    cbCat.SelectedIndex = -1;
+                    txtImage.Image = Restaurant_Management_System.Properties.Resources.brand_identity;
+                }
             }
         }
 

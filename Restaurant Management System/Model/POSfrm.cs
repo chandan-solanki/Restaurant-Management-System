@@ -590,5 +590,15 @@ namespace Restaurant_Management_System.Model
             orderType = "";
         }
 
+        private void ProductPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CategoryPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

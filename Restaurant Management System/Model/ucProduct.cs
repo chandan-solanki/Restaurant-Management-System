@@ -37,7 +37,7 @@ namespace Restaurant_Management_System.Model
 
         public Image pImage
         {
-            get { return txtImage.Image; }
+            get {  return txtImage.Image; }
             set { txtImage.Image = value; }
         }
 

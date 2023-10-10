@@ -83,6 +83,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(0, 379);
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(609, 74);
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2ControlBox1
             // 
@@ -132,6 +133,7 @@
             this.txtBillAmount.ShadowDecoration.Parent = this.txtBillAmount;
             this.txtBillAmount.Size = new System.Drawing.Size(254, 36);
             this.txtBillAmount.TabIndex = 4;
+            this.txtBillAmount.TextChanged += new System.EventHandler(this.txtBillAmount_TextChanged);
             // 
             // label3
             // 
@@ -206,6 +208,7 @@
             this.txtChange.ShadowDecoration.Parent = this.txtChange;
             this.txtChange.Size = new System.Drawing.Size(254, 36);
             this.txtChange.TabIndex = 8;
+            this.txtChange.TextChanged += new System.EventHandler(this.txtChange_TextChanged);
             // 
             // CheckOutfrm
             // 

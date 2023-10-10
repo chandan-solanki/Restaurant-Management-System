@@ -99,6 +99,12 @@
     <Compile Include="Forgetfrm.Designer.cs">
       <DependentUpon>Forgetfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeFrm.Designer.cs">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loginfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forgetfrm.resx">
       <DependentUpon>Forgetfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeFrm.resx">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Loginfrm.resx">
@@ -546,6 +556,9 @@
     <None Include="Resources\logout.png" />
     <None Include="Resources\padlock.png" />
     <None Include="Resources\password.png" />
+    <None Include="Resources\reshome.jpg" />
+    <None Include="Resources\8485239_3909116.jpg" />
+    <None Include="Resources\7973677_3766858.jpg" />
     <Content Include="RMDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

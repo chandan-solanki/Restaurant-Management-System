@@ -16,19 +16,24 @@ namespace Restaurant_Management_System.View
         {
             InitializeComponent();
         }
+
         public int id = -1;
 
-        private void btnStaff_Click(object sender, EventArgs e)
+
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+
+        }
+
+        private void btnChange_Click(object sender, EventArgs e)
         {
             ChangePasswordfrm frm = new ChangePasswordfrm();
             frm.id = id;
             frm.Show();
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
-        }
 
     }
 }

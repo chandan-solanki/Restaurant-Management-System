@@ -58,6 +58,7 @@
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(329, 10);
             this.guna2Separator1.TabIndex = 29;
+            this.guna2Separator1.Click += new System.EventHandler(this.guna2Separator1_Click);
             // 
             // btnSubmit
             // 
@@ -95,6 +96,7 @@
             this.label2.Size = new System.Drawing.Size(151, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Confirm New Password";
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -107,6 +109,7 @@
             this.label3.Size = new System.Drawing.Size(130, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Forget Password ";
+           // this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtConPass
             // 
@@ -137,6 +140,7 @@
             this.txtConPass.Size = new System.Drawing.Size(262, 40);
             this.txtConPass.TabIndex = 1;
             this.txtConPass.UseSystemPasswordChar = true;
+           // this.txtConPass.TextChanged += new System.EventHandler(this.txtConPass_TextChanged);
             // 
             // txtNewPass
             // 
@@ -166,6 +170,7 @@
             this.txtNewPass.ShadowDecoration.Parent = this.txtNewPass;
             this.txtNewPass.Size = new System.Drawing.Size(262, 40);
             this.txtNewPass.TabIndex = 0;
+            //this.txtNewPass.TextChanged += new System.EventHandler(this.txtNewPass_TextChanged);
             // 
             // label1
             // 
@@ -176,6 +181,7 @@
             this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "New Password \r\n";
+           // this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Panel1
             // 
@@ -188,6 +194,7 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(331, 240);
             this.guna2Panel1.TabIndex = 5;
+           // this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2PictureBox1
             // 
@@ -199,6 +206,7 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            //this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // Forgetfrm
             // 

@@ -54,6 +54,7 @@
             this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.Location = new System.Drawing.Point(464, 105);
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
             // 
             // btnAdd
@@ -62,13 +63,23 @@
             this.btnAdd.CheckedState.Parent = this.btnAdd;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(0, 0);
             this.btnAdd.HoverState.Parent = this.btnAdd;
+            this.btnAdd.Location = new System.Drawing.Point(47, 97);
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(45, 45);
             this.btnAdd.PressedState.Parent = this.btnAdd;
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(473, 75);
+            // 
             // label2
             // 
+            this.label2.Location = new System.Drawing.Point(42, 59);
             this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.Text = "Staff List";
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(47, 189);
             // 
             // DataGridView
             // 
@@ -110,7 +121,7 @@
             this.DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView.EnableHeadersVisualStyles = false;
             this.DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView.Location = new System.Drawing.Point(47, 293);
+            this.DataGridView.Location = new System.Drawing.Point(47, 243);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

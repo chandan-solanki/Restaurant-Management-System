@@ -126,6 +126,12 @@ namespace Restaurant_Management_System.Model
                 con.Close();
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
     }
 
    

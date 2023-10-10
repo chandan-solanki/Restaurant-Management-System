@@ -437,6 +437,7 @@
             this.CategoryPanel.Name = "CategoryPanel";
             this.CategoryPanel.Size = new System.Drawing.Size(189, 367);
             this.CategoryPanel.TabIndex = 1;
+            this.CategoryPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CategoryPanel_Paint);
             // 
             // ProductPanel
             // 
@@ -447,6 +448,7 @@
             this.ProductPanel.Name = "ProductPanel";
             this.ProductPanel.Size = new System.Drawing.Size(597, 367);
             this.ProductPanel.TabIndex = 1;
+            this.ProductPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductPanel_Paint);
             // 
             // dgvProductList
             // 

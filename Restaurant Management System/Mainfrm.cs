@@ -53,13 +53,14 @@ namespace Restaurant_Management_System
 
         private void Mainfrm_Load(object sender, EventArgs e)
         {
+            btnHome.PerformClick();
             lblUser.Text = Loginfrm.uname;
             _obj = this;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            //AddControl(new Homefrm());
+            AddControl(new HomeFrm());
         }
 
         private void btnCategory_Click(object sender, EventArgs e)

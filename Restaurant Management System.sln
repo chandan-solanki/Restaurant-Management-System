@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant Management System", "Restaurant Management System\Restaurant Management System.csproj", "{50AA6122-6D67-4D7D-BE20-74974ACA0959}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{6AB7924A-EADB-4634-B298-5A6F1952B69B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 		{50AA6122-6D67-4D7D-BE20-74974ACA0959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50AA6122-6D67-4D7D-BE20-74974ACA0959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50AA6122-6D67-4D7D-BE20-74974ACA0959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB7924A-EADB-4634-B298-5A6F1952B69B}.Debug|Any CPU.ActiveCfg = Debug
+		{6AB7924A-EADB-4634-B298-5A6F1952B69B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

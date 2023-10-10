@@ -48,7 +48,7 @@ namespace Restaurant_Management_System.Model
                         SqlCommand cmd1 = new SqlCommand("update user_info set uPassword = '" + txtNewPass.Text + "' where uId = '" + id + "'", con);
                         cmd1.ExecuteNonQuery();
                         MessageBox.Show("Password Change Successfully !","Success" , MessageBoxButtons.OK , MessageBoxIcon.Information);
-                        this.Close();
+                        this.Close();   
                     }
 
                     catch(Exception ex)

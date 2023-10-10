@@ -74,6 +74,20 @@ namespace Restaurant_Management_System.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _7973677_3766858 {
+            get {
+                object obj = ResourceManager.GetObject("7973677_3766858", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap _8485239_3909116 {
+            get {
+                object obj = ResourceManager.GetObject("8485239_3909116", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap _new {
             get {
                 object obj = ResourceManager.GetObject("new", resourceCulture);
@@ -329,6 +343,13 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap registration {
             get {
                 object obj = ResourceManager.GetObject("registration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap reshome {
+            get {
+                object obj = ResourceManager.GetObject("reshome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -36,7 +36,7 @@ namespace Restaurant_Management_System.Model
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-            string qry = @"Update tblMain set total = @total , received = @rec , change = @change,
+            string qry = @"update tblMain set total = @total , received = @rec , change = @change,
                 status = 'Paid' where MainID = @ID";
             Hashtable ht = new Hashtable();
             ht.Add("@ID", MainID);
@@ -54,6 +54,21 @@ namespace Restaurant_Management_System.Model
         private void CheckOutfrm_Load(object sender, EventArgs e)
         {
             txtBillAmount.Text = amount.ToString() ;
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtChange_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBillAmount_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

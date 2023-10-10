@@ -86,7 +86,7 @@ namespace Restaurant_Management_System
         {
             ConfirmFrm frm = new ConfirmFrm();
             frm.Show();
-            this.Close();
+            this.Hide();
         }
 
 

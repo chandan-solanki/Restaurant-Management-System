@@ -27,7 +27,11 @@ namespace Restaurant_Management_System
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtNewPass.Text == txtConPass.Text)
+            if (txtNewPass.Text == "" || txtConPass.Text == "")
+            {
+                MessageBox.Show("Please enter the field !!", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else if (txtNewPass.Text == txtConPass.Text)
             {
                 SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["db"].ConnectionString);
                 con.Open();
@@ -43,6 +47,11 @@ namespace Restaurant_Management_System
             {
                 MessageBox.Show("Please enter the same Password !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void guna2Separator1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
